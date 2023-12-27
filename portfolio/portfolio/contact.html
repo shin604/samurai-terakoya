@@ -1,27 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Form</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>SHINGO ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
 <body>
-<h1>フォーム</h1>
-<form action="https://forms.gle/5jaP2QyWVxF3roaR8" method="post">
+  <div class="wrapper">
 
-お名前を教えてください<br>
-<input type="text" name="entry.2005620554"><br>
-<br>
-メールアドレスを教えてください<br>
-<input type="text" name="entry.1045781291"><br>
-<br>
-電話番号を教えてください<br>
-<input type="text" name="entry.1166974658"><br>
-<br>
-お問い合わせ内容の記述お願いします。<br>
-<textarea name="entry.839337160" rows="3" cols="50"></textarea>
-<br>
-<button type="submit">送信</button>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="#">SHINGO HIRAI</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    <main class="content">
+      <section class="contact-form section">
+        <div class="container">
+          <h2>フォーム</h2>
+          <form action="https://forms.gle/5jaP2QyWVxF3roaR8" method="post">
+
+        <p>お名前</p><br>
+       <input type="text" name="entry.2005620554"><br>
+       <br>
+       <p>メールアドレス</p><br>
+       <input type="text" name="entry.1045781291"><br>
+      <br>
+       <p>電話番号</p><br>
+      <input type="text" name="entry.1166974658"><br>
+      <br>
+      <p>お問い合わせ内容</p><br>
+      <textarea name="entry.839337160" rows="3" cols="50"></textarea>
+      <br>
+      <button type="submit">送信</button>
 
 </form>
+
+
+
+
+        </div>
+      </section>
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;SHINGO HIRAI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>

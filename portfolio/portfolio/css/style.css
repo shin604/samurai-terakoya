@@ -540,3 +540,34 @@ img {
     margin-bottom: 20px;
   }
 }
+
+/*その他と主な共通部分は省略*/
+
+a.btn--green {
+  color: #fff;
+  background-color: #094;
+}
+
+a.btn--green:hover {
+  color: #fff;
+  background: #00a349;
+}
+
+a.btn--green.btn--cubic {
+  border-bottom: 5px solid #00662d;
+}
+
+a.btn--green.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #00662d;
+}
+
+a.btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
