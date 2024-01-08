@@ -541,33 +541,72 @@ img {
   }
 }
 
-/*その他と主な共通部分は省略*/
 
-a.btn--green {
-  color: #fff;
-  background-color: #094;
+/*お問い合わせフォーム*/
+
+.contact-form section {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.conntact-form_item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.contact-form_label,
+.contact-form_input {
+	padding: 10px;
+}
+.contact-form_label {
+	width: 90%;
+}
+.contact-form_input {
+	width: 90%;
+	font-size: 16px;
+	border: solid 1px #333;
+	border-radius: 4px;
+}
+.contact-form_input:focus-visible {
+	outline: green auto 1px;
+}
+.contact-form_required {
+	color: #fff;
+	background-color: green;
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+}
+textarea.contact-form_input {
+	height: 160px;
+}
+.contact-form_submit {
+	text-align: center;
+}
+.contact-form_submit button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: green;
+	border: solid 1px green;
+	border-radius: 4px;
+	padding: 5px 32px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.contact-form_submit button:hover {
+	color: green;
+	background-color: transparent;
 }
 
-a.btn--green:hover {
-  color: #fff;
-  background: #00a349;
-}
-
-a.btn--green.btn--cubic {
-  border-bottom: 5px solid #00662d;
-}
-
-a.btn--green.btn--cubic:hover {
-  margin-top: 3px;
-  border-bottom: 2px solid #00662d;
-}
-
-a.btn-c {
-  font-size: 2rem;
-  position: relative;
-  padding: 1.5rem 3rem 1.5rem 2rem;
-}
-
-a.btn-c i.fa {
-  margin-right: 1rem;
+@media (min-width: 640px) {
+	.contact-form_item {
+		flex-wrap: nowrap;
+	}
+	.contact-form_label {
+		width: 40%;
+	}
+	.contact-form__input {
+		width: 55%;
+	}
 }
