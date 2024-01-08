@@ -147,7 +147,7 @@ SP
   Detail
   -------------------------------------------*/
   #detail .content {
-    flex-direction: column;  /* 縦並びにする */
+    flex-direction: column;  
   }
   #detail .content .img {
     width: 100%;
