@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>SHINGO ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="wrapper">
+
+     <!-- header -->
+     <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">SHINGO HIRAI</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    <main class="content">
+      <section class="contact-form section">
+        <div class="container">
+          <h2>お問い合わせ</h2>
+          <form action="https://forms.gle/5jaP2QyWVxF3roaR8" method="post">
+          <div class="contact-form_item">
+          <label class="contact-form_label" for="field-name">名前・会社名
+            <span class="contact-form_required">必須</span></label>
+          <input
+            name="entry.2005620554"
+            class="contact-form_input"
+            id="field-name"
+            placeholder="株式会社 〇〇"
+            type="text"
+            required="required"
+          />
+        </div>
+        <div class="contact-form_item">
+          <label class="contact-form_label" for="field-mail">メールアドレス
+            <span class="contact-form_required">必須</span></label>
+          <input
+            name="entry.1045781291"
+            class="contact-form_input"
+            id="field-mail"
+            placeholder="sample@gmail.com"
+            type="email"
+            required="required"
+          />
+        </div>
+        <div class="contact-form_item">
+          <label class="contact-form_label" for="field-message">お問い合わせ内容</label>
+          <textarea
+          　name="entry.839337160"
+            class="contact-form_input"
+            id="field-message"
+            placeholder="お問い合わせ内容"
+          ></textarea>
+        </div>
+        <div class="contact-form_submit">
+          <button type="submit">送信する</button>
+        </div>
+</form>
+<script>
+  let submitted = false;
+
+  const page_transition = function () {
+      if(submitted){
+          window.location = 'thanks.html';
+      }
+      }
+　　　</script>    
+　　　　<iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
+        </div>
+      </section>
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;SHINGO HIRAI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
